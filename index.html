@@ -116,6 +116,8 @@
             thriving, and exciting company to develop my skills as well as grove
             with a team. I am very responsible.
           </p>
+                    <button data-modal-open class="button button-feedback ">Сlick Contact me</button>
+
         </div>
         <!-- Projects container -->
         <div class="projects-container">
@@ -236,8 +238,68 @@
 
     <footer class="footer">
       <div class="container">
-        <a class="footer-button" href="./data/oksana_repchak_resume.pdf" download="oksana_repchak_resume">Download resume</a>
+        <a class="button" href="./data/oksana_repchak_resume.pdf" download="oksana_repchak_resume">Download resume</a>
       </div>
     </footer>
+
+       <!-- modal -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-close" data-modal-close></button>
+        <form class="form" autocomplete="off">
+          <p class="form-title">Leave your details, I'll call you back</p>
+          <label class="form-field">
+            <input type="text" class="form-input" name="name" placeholder=" " />
+            <span class="form-label">Name</span>
+            <svg class="modal-icon" width="18" height="18">
+              <use href="./images/sprite.svg#person-black"></use>
+            </svg>
+          </label>
+          <label class="form-field">
+            <input type="tel" class="form-input" name="tel" placeholder=" " />
+            <span class="form-label">Phone number</span>
+            <svg class="modal-icon" width="18" height="18">
+              <use href="./images/sprite.svg#phone-black"></use>
+            </svg>
+          </label>
+          <label class="form-field">
+            <input
+              type="email"
+              class="form-input"
+              name="mail"
+              placeholder=" "
+            />
+            <span class="form-label">Email</span>
+            <svg class="modal-icon" width="18" height="18">
+              <use href="./images/sprite.svg#email-black"></use>
+            </svg>
+          </label>
+          <label class="form-field coment">
+            <textarea
+              class="form-textarea"
+              name="coment"
+              cols="63"
+              rows="6"
+              placeholder=" "
+            ></textarea>
+            <span class="form-label coment">Comment</span>
+          </label>
+          <label class="form-field checkbox">
+            <input
+              type="checkbox"
+              class="form-checkbox visually-hidden"
+              name="consent"
+            />
+            <span class="checkbox-icon"></span>
+            <span class="form-label checkbox">
+              I agree with the mailing and accept
+              <a class="contract-link" href="">Terms of the contract</a>
+            </span>
+          </label>
+          <button data-open-modal class="button">Send</button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
